@@ -20,3 +20,4 @@ git push progom main
 
 > vista previa del index.html
 
+![Index](https://raw.githubusercontent.com/MrHEmilio/ejercicio-dom/refs/heads/main/images/Captura%20de%20pantalla%202025-04-08%20a%20la(s)%2010.42.09.png)
