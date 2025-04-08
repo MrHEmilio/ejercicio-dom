@@ -25,5 +25,16 @@ let btnMostrar = document.getElementById("btnMostrar");
 
 btnMostrar.addEventListener("click", function(event){
     event.preventDefault();
-    console.log("botón btnModificar presionado")
+    let element = document.createElement("li");
+    element.innerText = "Another item";
+    element.classList.add("list-group-item");
+
+    let element2 = element.cloneNode(true);
+    element2.innerText = "Another item 2";
+    
+    
+    // listas.item(0).before(element);
+    // listas.item(0).prepend(element);
+    listas.item(0).append(element2);
+    listas.item(0).after(element);
 });
