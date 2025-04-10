@@ -53,3 +53,29 @@ btnMostrar.addEventListener("click", function(event){
         `<li class="list-group-item">Before end item</li>`
     );
 });
+
+let txtRFC = document.getElementById("txtRFC");
+let txtCURP = document.getElementById("txtCURP")
+let txtTelefono = document.getElementById("txtTelefono");
+
+window.addEventListener("load", function(event){
+    console.log("Se terminó de cargar la página");
+});
+
+function txtToUpper(event){
+    event.preventDefault();
+    event.target.value = event.target.value.trim().toUpperCase();
+
+}
+
+
+txtRFC.addEventListener("blur", txtToUpper);
+txtCURP.addEventListener("blur", txtToUpper);
+
+
+txtTelefono.addEventListener("blur", function(event){
+    // event.preventDefault();
+    txtTelefono.value = txtTelefono.value.trim().slice(0, 10);
+    }
+);
+
